@@ -1,0 +1,39 @@
+.section-our-services{
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.our-services-title{
+  @include title-section;
+}
+.our-services-cont-btn{
+  margin-top: 60px;
+}
+.block-img{
+  margin: auto;
+  margin-bottom: 35px;
+  width: 175px;
+  height: 175px;
+  border: 4px solid #00a1eb;
+  border-radius: 50%;
+  background: #00a1eb;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  #icon-services{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
+    width: 100px;
+    height: 100px;
+
+  }
+  &:hover{
+    background: none;
+  }
+  &:hover #icon-services{
+    fill: #00a1eb;
+  }
+}

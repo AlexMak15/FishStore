@@ -1,0 +1,44 @@
+.section-o-nas{
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+.o-nas_title{
+  @include title-section;
+  font-size: 34px;
+}
+.o-nas_text{
+  margin-bottom: 20px;
+}
+.phone-number{
+  font-family: $primary-font;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 0.95;
+  color: $color-second-text;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 30px;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.primary-btn {
+@include primary-btn;
+}
+.block-frige{
+  position: relative;
+  min-height: 380px;
+  background-image: url("../img/img-o-nas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .block-frige-title{
+    position: absolute;
+    font-family: $primary-font;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    right: 40px;
+    bottom: 40px;
+  }
+}

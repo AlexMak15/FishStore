@@ -1,0 +1,106 @@
+.section-asortyment{
+  background-image: url("../img/bg-section-asortyment-1.png");
+  padding-bottom: 80px;
+}
+.title-section-asortyment{
+  @include title-section;
+  font-size: 34px;
+  margin-top: 80px;
+}
+.block-asort-title-text{
+  margin-bottom: 40px;
+}
+//Carousel
+
+.asortyment-carousel-slide-1{
+  background-image: url(../img/asortymentSlider/asortryment-slide-1.jpg);
+}
+.asortyment-carousel-slide-2{
+  background-image: url(../img/asortymentSlider/asortryment-slide-2.jpg);
+}
+.asortyment-carousel-slide-3{
+  background-image: url(../img/asortymentSlider/asortryment-slide-3.jpg);
+}
+.asortyment-carousel-slide-4{
+  background-image: url(../img/asortymentSlider/asortryment-slide-4.jpg);
+}
+#asortyment-carousel{
+  padding-bottom: 60px;
+}
+.asrt-coursl-slide{
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 270px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+}
+.asortyment-carousel-blk-text{
+  text-align: center;
+  .asortyment-slide-title{
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: bold;
+    color: $color-text-asort-carousel;
+  }
+  .blk-text-price{
+    font-family: $primary-font;
+    font-size: 24px;
+    font-weight: 100;
+    color: $color-text-asort-carousel;
+    line-height: 25px;
+  }
+}
+
+.btn-zamow{
+  margin-top: 10px;
+  display: none;
+  color: #00a1eb;
+  font-size: 14px;
+  font-family: $primary-font;
+  font-weight: bold;
+  line-height: 37px;
+  background: $color-bg-btn-asort-carousel;
+  border-radius: 3.4px;
+  padding-left: 17px;
+  padding-right: 17px;
+  &:hover{
+    text-decoration: none;
+    color: #00a1eb;
+    animation: animat-btn-hover 0.5s;
+  }
+}
+.asrt-coursl-slide{
+  &:hover .btn-zamow{
+  display: inline-block;
+  }
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev{
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 115px;
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next{
+  background-image: url(../img/asortymentSlider/icon/icon-right.png);
+  background-repeat: no-repeat;
+  right: -50px;
+  &:hover{
+    animation: icon-slide-right 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+.owl-carousel .owl-dot,
+ .owl-carousel .owl-nav .owl-prev{
+   background-image: url(../img/asortymentSlider/icon/icon-left.png);
+   background-repeat: no-repeat;
+  left: -50px;
+  &:hover{
+    animation: icon-slide-left 0.5s;
+    animation-iteration-count: infinite;
+  }
+ }

@@ -1,0 +1,129 @@
+.block-top-menu{
+  position: relative;
+}
+.wraper-top-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  a{
+    color: $color-main-menu;
+  }
+}
+//Menu
+.hamburger{
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  display: none;
+}
+.cont-top-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar{
+  margin-top: 40px;
+  font-family: $primary-font;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  list-style: none;
+  display: flex;
+}
+.navbar-brand{
+  height: auto;
+  font-size: 25px;
+}
+@media only screen and (max-width : 1200px){
+  .cont-top-menu{
+    display: none;
+  }
+}
+.top-menu-visible{
+  display: block;
+  animation: anim-top-menu 1s;
+}
+//Menu End
+.logo {
+  margin-top: 40px;
+  font-family: $primary-font;
+  font-weight: bold;
+  letter-spacing: 1px;
+  .log-regula{
+    font-weight: normal;
+  }
+  .logo-extra-regula{
+    font-weight: 200;
+  }
+  a {
+    padding: 0;
+    padding-bottom: 5px;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  }
+.cntr-menu{
+  padding: 0;
+}
+
+.nav-bar>li>a{
+  padding: 0;
+}
+.nav-bar>li{
+  padding-right: 20px;
+}
+.nav-bar>li>a{
+  &:hover,&:active,&:focus {
+    text-decoration: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+.nav-bar .main-menu-tel{
+  display: inline-block;
+  letter-spacing: 0.4px;
+  background: $color-primary-btn;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 5.5px;
+  margin: -10px;
+  &:hover{
+    background: $color-primary-btn;
+  }
+  a{
+    border-bottom: 1px solid transparent;
+  }
+
+}
+//Slider
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{
+  height: 100vh;
+}
+.carousel-inner img{
+  width: 100%;
+}
+.item{
+  position: relative;
+}
+.item .carousel-caption{
+  font-weight: bold;
+  text-align: center;
+  bottom: 40vh;
+  .title-slide{
+    font-size: 78.7px;
+    letter-spacing: 12.6px;
+    font-weight: bold;
+    font-family: $primary-font;
+    color: #fff;
+  }
+  p{
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-family: $secondary-font;
+    color: #fff;
+  }
+}

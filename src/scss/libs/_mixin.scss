@@ -1,0 +1,41 @@
+@mixin primary-btn{
+  display: inline-block;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  line-height: 1.07;
+  border-radius: 6px;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  background: $color-primary-btn;
+  color: $color-text-btn;
+  text-decoration: none;
+  &:hover, &:active, &:active{
+    text-decoration: none;
+    color: $color-text-btn;
+    animation: animat-btn-hover 0.5s;
+  }
+}
+@mixin title-section{
+  font-family: $primary-font;
+  font-weight: bold;
+  color: $color-second-text;
+  position: relative;
+  margin-bottom: 50px;
+  display: inline-block;
+  margin-top: 0;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 81px;
+    background: $color-line-under-title;
+    bottom: -22px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

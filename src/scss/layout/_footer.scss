@@ -1,0 +1,32 @@
+.section-contact-next{
+  background: #f8f8f8;
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+.contact-next-title{
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.contact-next-list{
+  list-style: none;
+  line-height: 1.86;
+  a{
+    color: $primary-color-text;
+  }
+
+}
+.section-copyright{
+  min-height: 121px;
+  background: $color-bg-copyright;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.email{
+  font-size: 13px;
+}
+.block-copyright{
+  color: #fff;
+  font-family: $primary-font;
+}
